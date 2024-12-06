@@ -1,0 +1,2 @@
+Studento_ID|Vardas|Pavardė|Grupės_ID
+1|ts|t|test

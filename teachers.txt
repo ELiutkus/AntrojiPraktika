@@ -1,0 +1,2 @@
+Dėstytojo_ID|Vardas|Pavardė|Dėstomas_Dalykas
+1|test|test

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginUI</class>
+ <widget class="QDialog" name="LoginUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Prisijungimas</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelUsername">
+     <property name="text">
+      <string>Vartotojo vardas:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLineEdit" name="usernameLineEdit"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="labelPassword">
+     <property name="text">
+      <string>Slaptažodis:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLineEdit" name="passwordLineEdit">
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QPushButton" name="loginButtonAdmin">
+     <property name="text">
+      <string>Prisijungti Administratoriui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QPushButton" name="loginButtonTeacher">
+     <property name="text">
+      <string>Prisijungti Dėstytojui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QPushButton" name="loginButtonStudent">
+     <property name="text">
+      <string>Prisijungti Studentui</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>loginButtonAdmin</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginUI</receiver>
+   <slot>on_loginButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loginButtonTeacher</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginUI</receiver>
+   <slot>on_loginButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_loginButton_clicked()</slot>
+ </slots>
+</ui>
